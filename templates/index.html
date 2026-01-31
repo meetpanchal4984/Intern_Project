@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link for CSS  -->
+    <link rel="stylesheet" href="../static/CSS/style.css">
+    <link rel="stylesheet" href="../static/CSS/md.css">
+    <link rel="stylesheet" href=../static/CSS/sm.css>
+
+
+
+
+    <!-- link for Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- link for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+
+    <title>Final Project</title>
+</head>
+
+<body>
+
+    <!-- Navbar section -->
+    <header id="header" class="header">
+        <a href="#">
+            <img class="logo" src="../static/Images/logo2.png" alt="logo">
+        </a>
+
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a class="active" href="index">Home</a></li>
+                <li><a href="shop">Shop</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li class="cart"><a href="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="user"><a href="signup"><i class="fa-solid fa-user"></i></i></a></li>
+
+                <a href="#" id="close" class="close"><i class="fa-solid fa-xmark" onclick="closei()"></i></a>
+            </ul>
+        </div>
+        <div id="tablet" class="tablet">
+            <a href="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <li class="cart"><a href="signup"><i class="fa-solid fa-user"></i></i></a></li>
+            <i id="bar" class="fa-solid fa-outdent" onclick="icon()"></i>
+        </div>
+    </header>
+
+    
+
+    <!-- Home section  -->
+    <section id="section-1" class="section-1">
+        <p style="text-align: center;">{{user.Fristname}}{{msg}}</p>
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- feature section  -->
+    <section id="feature" class="feature">
+        <div class="feature-box">
+            <img src="../static/Images/features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+
+        <div class="feature-box">
+            <img src="../static/Images/features/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+
+        <div class="feature-box">
+            <img src="../static/Images/features/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+
+        <div class="feature-box">
+            <img src="../static/Images/features/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+
+        <div class="feature-box">
+            <img src="../static/Images/features/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+
+        <div class="feature-box">
+            <img src="../static/Images/features/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <!-- featured Products  -->
+    <section id="product1" class="product1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+
+        <div class="f-row">
+            <div class="one">
+                <img src="../static/Images/products/f1.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-Shierts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/f2.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-Shierts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/f3.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-Shierts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/f4.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-Shierts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/f5.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-Shierts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/f6.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-Shierts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/f7.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-Shierts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/f8.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut T-Shierts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner section  -->
+    <section id="banner" class="banner">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% off -</span> All t-Shirts & Accessories</h2>
+        <button class="btn-1">Explore More</button>
+    </section>
+
+    <!-- Small Banner  -->
+    <section id="sm-banner" class="sm-banner">
+        <div class="banner-box1">
+            <h4>Crazy deals</h4>
+            <h2>buy 1 get 1 free</h2>
+            <span>The best classic dress is one sale at cara</span>
+            <button class="btn-2">learn More</button>
+        </div>
+
+        <div class="banner-box2">
+            <h4>Spring/Summer</h4>
+            <h2>Upcomming Season</h2>
+            <span>The best classic dress is one sale at cara</span>
+            <button class="btn-2">Collection</button>
+        </div>
+    </section>
+
+    <!-- Mini Banner   -->
+    <section id="banner2" class="banner2">
+        <div class="min-banner">
+            <h2>SEASONAL SALE</h2>
+            <h3>Winter Collation -50% OFF</h3>
+        </div>
+
+        <div class="min-banner2">
+            <h2>NEW FOOTWEAR COLLECTION</h2>
+            <h3>Spring / Summer2024</h3>
+        </div>
+
+        <div class="min-banner3">
+            <h2>T-SHIRT</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
+    </section>
+
+    <!-- sign-Up section  -->
+    <section id="newsletter" class="newsletter">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+
+        <div class="form">
+            <input type="email" id="email" placeholder="Your email address">
+            <button class="btn-3">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Footer section  -->
+    <footer id="footer" class="footer">
+        <div class="col1">
+            <img class="logo1" src="../static/Images/logo2.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> (+91) 9510670132 / (+91) 8866830048</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook">
+                        <a href="https://www.facebook.com/login/"></a>
+                    </i>
+                    <i class="fa-brands fa-x-twitter">
+                        <a href="https://twitter.com/i/flow/login"></a>
+                    </i>
+                    <i class="fa-brands fa-instagram">
+                        <a href="https://www.instagram.com/accounts/login/"></a>
+                    </i>
+                    <i class="fa-brands fa-whatsapp">
+                        <a href="https://www.whatsapp.com/"></a>
+                    </i>
+                    <i class="fa-brands fa-youtube">
+                        <a href="https://www.youtube.com/"></a>
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col2">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col3">
+            <h4>My Account</h4>
+            <a href="signup">Sign-Up</a>
+            <a href="login">Sign-In</a>
+            <a href="cart">View Cart</a>
+            <a href="cart">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col4">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play Store</p>
+            <div class="f-row">
+                <img src="../static/Images/pay/app.jpg" alt="">
+                <img src="../static/Images/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../static/Images/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024, E-Commerce Website</p>
+        </div>
+    </footer>
+
+    <!-- link for Javascript -->
+    <script src="../static/js/app.js"></script>
+
+    <!-- link for Bootsrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

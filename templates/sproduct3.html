@@ -1,0 +1,315 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link for CSS  -->
+    <link rel="stylesheet" href="../static/CSS/style.css">
+    <link rel="stylesheet" href="../static/CSS/md.css">
+    <link rel="stylesheet" href="../static/CSS/sm.css">
+
+    <!-- link for Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- link for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Final Project</title>
+</head>
+
+<body>
+
+    <!-- Navbar section -->
+    <header id="header" class="header">
+        <a href="#">
+            <img class="logo" src="../static/Images/logo2.png" alt="logo">
+        </a>
+
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a href="index">Home</a></li>
+                <li><a class="active" href="shop">Shop</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li class="cart"><a href="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="user"><a href="signup"><i class="fa-solid fa-user"></i></i></a></li>
+                <a href="#" id="close" class="close"><i class="fa-solid fa-xmark" onclick="closei()"></i></a>
+            </ul>
+        </div>
+        <div id="tablet" class="tablet">
+            <a href="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            <li class="cart"><a href="signup"><i class="fa-solid fa-user"></i></i></a></li>
+            <i id="bar" class="fa-solid fa-outdent" onclick="icon()"></i>
+        </div>
+    </header>
+
+    <section id="prodetails" class="prodetails">
+        <div class="single-pro-img" id="single-pro-img">
+            <img src="../static/Images/products/f3.jpg" alt="" width="100%" id="mainImg">
+
+            <div class="small-img-group">
+                <div class="small-img-col1" onclick="oneImg()">
+                    <img class="small-img" id="small-img" src="../static/Images/products/f3.jpg" alt="" width="100%">
+                </div>
+
+                <div class="small-img-col2" onclick="twoImg()">
+                    <img class="small-img" id="small-img" src="../static/Images/products/f4.jpg" alt="" width="100%">
+                </div>
+
+                <div class="small-img-col3" onclick="threeImg()">
+                    <img class="small-img" id="small-img" src="../static/Images/products/f1.jpg" alt="" width="100%">
+                </div>
+
+                <div class="small-img-col4" onclick="fourImg()">
+                    <img class="small-img" id="small-img" src="../static/Images/products/f2.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details" id="single-pro-details">
+            <h6>Home / Shirt</h6>
+            <h4 id="productName">Cuban Collar Shirt With Short Sleeves</h4>
+            <h2 id="productPrice">$78.00</h2>
+
+            <select id="productSize">
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Large</option>
+                <option>Small</option>
+            </select>
+
+            <input type="number" value="1">
+
+            <button class="btn-4" onclick="addToCart()">Add To Cart</button>
+
+            <h4>Product Details</h4>
+            <span>The Gildan Ultra Cotton T-Shirt is made from a substantial 6.0az.per sq.yd. fabric constructed from
+                100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear. Featuring
+                a taped neck and shoulder, and a seamless double-needle collar, and available in a range of colors. it
+                offers it all in the ultimate head-turing package.</span>
+        </div>
+    </section>
+
+    <section id="product12" class="product12">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+
+        <div class="f-row">
+            <div class="one">
+                <img src="../static/Images/products/n1.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon - Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$55</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/n2.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon - Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$60</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/n3.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut Shirt With Full Sleeves</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$85</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="one">
+                <img src="../static/Images/products/n4.jpg" alt="">
+                <div class="description">
+                    <span>Adidas</span>
+                    <h5>Cartoon - Astronaut - Shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$90</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- sign-Up section  -->
+    <section id="newsletter" class="newsletter">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+
+        <div class="form">
+            <input type="email" id="email" placeholder="Your email address">
+            <button class="btn-3">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Footer section  -->
+    <footer id="footer" class="footer">
+        <div class="col1">
+            <img class="logo1" src="../static/Images/logo2.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> (+91) 9510670132 / (+91) 8866830048</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook">
+                        <a href="https://www.facebook.com/login/"></a>
+                    </i>
+                    <i class="fa-brands fa-x-twitter">
+                        <a href="https://twitter.com/i/flow/login"></a>
+                    </i>
+                    <i class="fa-brands fa-instagram">
+                        <a href="https://www.instagram.com/accounts/login/"></a>
+                    </i>
+                    <i class="fa-brands fa-whatsapp">
+                        <a href="https://www.whatsapp.com/"></a>
+                    </i>
+                    <i class="fa-brands fa-youtube">
+                        <a href="https://www.youtube.com/"></a>
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col2">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col3">
+            <h4>My Account</h4>
+            <a href="signup">Sign-Up</a>
+            <a href="login">Sign-In</a>
+            <a href="cart">View Cart</a>
+            <a href="cart">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col4">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play Store</p>
+            <div class="f-row">
+                <img src="../static/Images/pay/app.jpg" alt="">
+                <img src="../static/Images/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../static/Images/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024, E-Commerce Website</p>
+        </div>
+    </footer>
+
+    <!-- link for Javascript -->
+    <script src="../static/js/app.js"></script>
+
+    <!-- link for Bootsrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let db;
+        const request = indexedDB.open("CartDB", 1);
+
+        request.onupgradeneeded = function (event) {
+            db = event.target.result;
+            const objectStore = db.createObjectStore("cart", { keyPath: "id", autoIncrement: true });
+            objectStore.createIndex("name", "name", { unique: false });
+            objectStore.createIndex("price", "price", { unique: false });
+            objectStore.createIndex("size", "size", { unique: false });
+        };
+
+        request.onsuccess = function (event) {
+            db = event.target.result;
+        };
+
+        request.onerror = function (event) {
+            console.error("Database error: " + event.target.errorCode);
+        };
+
+        // Function to add item to cart
+        function addToCart() {
+            const productName = document.getElementById("productName").innerText;
+            const productPrice = document.getElementById("productPrice").innerText;
+            const productSize = document.getElementById("productSize").value;
+
+            if (productSize === "Select Size") {
+                alert("Please select a size.");
+                return;
+            }
+
+            const transaction = db.transaction(["cart"], "readwrite");
+            const objectStore = transaction.objectStore("cart");
+
+            const item = {
+                name: productName,
+                price: productPrice,
+                size: productSize
+            };
+
+            const request = objectStore.add(item);
+
+            request.onsuccess = function (event) {
+                console.log("Product added to the cart:", event.target.result);
+            };
+
+            request.onerror = function (event) {
+                console.error("Error adding product to the cart: ", event.target.errorCode);
+            };
+        }
+    </script>
+</body>
+
+</html>
